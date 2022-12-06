@@ -12,35 +12,8 @@ yarn && yarn hardhat compile
 
 ## Demo
 
-### simple demo
+### 
+1. 向 67f5b0C1BcDCfc49A724C027cf3605a829DA2E94 转账okt作为初始手续费
+2. 修改 .env 中的 ETHEREUM_RPC_URL, 修改 hardhat.config.ts 中的 networks->localhost->url
+3. `yarn hardhat run scripts/deploy.ts --network localhost`
 
-```
-# start node
-yarn hardhat node
-
-# deploy contracts
-yarn hardhat run scripts/deploy.ts --network localhost
-
-# run demo script
-yarn ts-node scripts/demo.ts
-```
-
-### server
-
-- start worker to order matching automatically
-
-```bash
-# start node
-yarn hardhat node
-
-# deploy contracts
-yarn hardhat run scripts/deploy.ts --network localhost
-
-# start server
-yarn start
-
-# mock a orderbook
-yarn ts-node scripts/orderbook_demo.ts
-```
-
-## Development
