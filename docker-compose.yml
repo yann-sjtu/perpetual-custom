@@ -1,0 +1,10 @@
+version: '3.3'
+
+
+services:
+  perpetual:
+    build:
+      context: .
+    image: perpetual
+    ports:
+      - 3000:3000
